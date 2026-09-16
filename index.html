@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Media Ajar Interaktif Mata Kuliah Sistem Digital - Konversi Bilangan, Gerbang Logika, Aljabar Boolean, dan lainnya.">
+  <meta name="keywords"
+    content="sistem digital, konversi bilangan, biner, heksadesimal, oktal, desimal, gerbang logika, aljabar boolean">
+  <title>Media Ajar Interaktif - Sistem Digital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="app-layout">
+    <!-- Sidebar Overlay (Mobile) -->
+    <div class="sidebar-overlay" onclick="closeMobileSidebar()"></div>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-brand">
+          <div class="sidebar-logo">⚡</div>
+          <div>
+            <div class="sidebar-title">Sistem Digital</div>
+            <div class="sidebar-subtitle">Media Ajar Interaktif</div>
+          </div>
+        </div>
+      </div>
+      <nav class="sidebar-nav" id="sidebar-nav">
+        <!-- Populated by JS -->
+      </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Top Header -->
+      <header class="content-header">
+        <div class="header-left">
+          <button class="mobile-menu-btn" onclick="toggleMobileSidebar()">☰</button>
+          <div class="breadcrumb" id="breadcrumb">
+            <span class="breadcrumb-item">Sistem Digital</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-item current">Minggu 1</span>
+          </div>
+        </div>
+        <div class="header-right">
+          <button class="theme-toggle-btn" id="theme-toggle-btn" onclick="toggleTheme()" title="Ganti Tema Tampilan">
+            <span class="theme-icon" id="theme-icon">🌙</span>
+            <span class="theme-label" id="theme-label">Cyber Dark</span>
+          </button>
+          <div class="header-badge">
+            <span class="dot"></span>
+            <span>HTML5 Interactive</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Horizontal Weeks Tab Bar (Minggu 1 - 14) -->
+      <nav class="weeks-nav-section" aria-label="Navigasi Minggu Perkuliahan">
+        <div class="weeks-tab-scroll" id="weeks-tab-bar">
+          <!-- Populated by JS for Minggu 1 to 14 -->
+        </div>
+      </nav>
+
+      <!-- Submenu Pill Bar for the Active Week -->
+      <nav class="submenu-pill-container" id="submenu-pill-bar" aria-label="Submenu Topik">
+        <!-- Populated by JS based on current week's submenus -->
+      </nav>
+
+      <!-- Dynamic Content -->
+      <div class="content-body" id="content-body">
+        <!-- Content rendered by JavaScript -->
+      </div>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/minggu1.js"></script>
+  <script src="js/minggu2.js"></script>
+</body>
+
+</html>
